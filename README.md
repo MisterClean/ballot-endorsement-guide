@@ -9,8 +9,6 @@ Headless, self-hostable ballot endorsement lookup for civic organizations.
 Given an address or coordinates, the app resolves district layers from your configured map pack and returns your matching endorsed slate.
 
 <p align="center">
-  <img src="docs/assets/mobile-home.png" alt="Home screen — address input" width="300" />
-  &nbsp;&nbsp;
   <img src="docs/assets/mobile-results.png" alt="Results — endorsed slate for a Chicago address" width="300" />
 </p>
 
