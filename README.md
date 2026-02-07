@@ -8,6 +8,10 @@ Headless, self-hostable ballot endorsement lookup for civic organizations.
 
 Given an address or coordinates, the app resolves district layers from your configured map pack and returns your matching endorsed slate.
 
+<p align="center">
+  <img src="docs/assets/mobile-results.png" alt="Results — endorsed slate for a Chicago address" width="300" />
+</p>
+
 ## Features
 
 - Single-tenant deployment model (one org per instance)
@@ -33,6 +37,16 @@ npm run dev
 Open `http://localhost:3000`.
 
 ## Configure For Your Organization
+
+The fastest way to get started is with the **`fork-and-customize` Claude Code skill**. If you have [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed, run:
+
+```
+/fork-and-customize
+```
+
+The skill walks you through branding, jurisdiction setup, district maps, endorsements, geocoding provider selection, deployment, and testing — all interactively.
+
+### Manual setup
 
 1. Update `frontend/src/lib/app-config.ts` (org branding + jurisdiction settings).
 2. Choose a geocoder in `frontend/src/lib/app-config.ts`.

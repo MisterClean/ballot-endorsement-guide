@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+:root {
+  --font-space-grotesk: "Trebuchet MS", "Avenir Next", "Segoe UI", sans-serif;
+  --font-source-sans: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 @theme inline {
   --color-ink: #122641;
   --color-ink-soft: #1a355c;

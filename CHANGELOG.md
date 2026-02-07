@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Placeholder for upcoming changes.
+- `fork-and-customize` Claude Code agent skill (`.claude/skills/fork-and-customize/SKILL.md`) that interactively guides users through forking and customizing the app for a new organization, election, and jurisdiction. Covers branding, district maps, endorsements, geocoding provider selection, deployment, and testing.
 
 ## [0.1.0] - 2026-02-06
 
