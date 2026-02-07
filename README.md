@@ -59,7 +59,9 @@ District GeoJSON files included in this repo are kept as sample data for Illinoi
 
 ## Environment Variables
 
-Set one provider key, based on selected geocoder:
+Set a provider and one matching provider key:
+
+- `GEOCODING_PROVIDER` with one of: `geocode-earth`, `mapbox`, `google-maps`, `geoapify`
 
 - `GEOCODE_EARTH_API_KEY` for `geocode-earth`
 - `MAPBOX_ACCESS_TOKEN` for `mapbox`
@@ -98,7 +100,16 @@ docker run -p 3000:3000 ballot-endorsement-guide
 This repo includes `railway.toml` and Docker-based deploy config.
 
 - Healthcheck path: `/api/health`
-- Configure env vars in Railway service settings
+- Configure env vars in Railway service settings:
+  - `GEOCODING_PROVIDER=<your-provider>`
+  - the matching provider API key (for example `GEOCODE_EARTH_API_KEY=...`)
+
+To run a community showcase deployment without touching `main`:
+
+1. Push a dedicated branch (for example `showcase/community-demo`).
+2. In Railway, create a separate service or project connected to this repo and set its source branch to that showcase branch.
+3. Set `GEOCODING_PROVIDER` to match your private tenant deployment (for example `geocode-earth`) and set the same API key variable used there.
+4. Deploy and verify `/api/health` returns `200`.
 
 ## Open-Source Launch Checklist
 

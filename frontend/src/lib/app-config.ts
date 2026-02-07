@@ -66,8 +66,8 @@ export const APP_CONFIG: AppConfig = {
     headerSubtitle: "An open-source ballot endorsement guide starter for any jurisdiction",
     electionLabel: "Boilerplate Community Edition",
     footerBlurb: "Fork, customize, and ship your own public voter guide",
-    attributionName: "Civic Atlas Labs",
-    attributionUrl: "https://github.com/civic-atlas-labs",
+    attributionName: "MisterClean/ballot-endorsement-guide",
+    attributionUrl: "https://github.com/MisterClean/ballot-endorsement-guide",
   },
   geography: {
     jurisdictionName: "Illinois (Sample Pack)",

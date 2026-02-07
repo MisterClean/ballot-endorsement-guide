@@ -8,10 +8,10 @@
 import { describe, it, expect } from "vitest";
 import { GET } from "@/app/api/lookup/route";
 import { createRequest } from "./test-utils";
-import { APP_CONFIG } from "@/lib/app-config";
+import { getConfiguredGeocodingProvider } from "@/lib/geocoding";
 
 function hasGeocodingApiKey(): boolean {
-  switch (APP_CONFIG.geocoding.provider) {
+  switch (getConfiguredGeocodingProvider()) {
     case "geocode-earth":
       return Boolean(
         process.env.GEOCODE_EARTH_API_KEY ||
