@@ -34,6 +34,16 @@ Open `http://localhost:3000`.
 
 ## Configure For Your Organization
 
+The fastest way to get started is with the **`fork-and-customize` Claude Code skill**. If you have [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed, run:
+
+```
+/fork-and-customize
+```
+
+The skill walks you through branding, jurisdiction setup, district maps, endorsements, geocoding provider selection, deployment, and testing — all interactively.
+
+### Manual setup
+
 1. Update `frontend/src/lib/app-config.ts` (org branding + jurisdiction settings).
 2. Choose a geocoder in `frontend/src/lib/app-config.ts`.
 3. Set only the matching API credential in runtime env vars.
